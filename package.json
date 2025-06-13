@@ -1,0 +1,17 @@
+{
+  "name": "battleship-game",
+  "version": "1.0.0",
+  "description": "A fully functional Battleship game with smart AI opponent",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server ."
+  },
+  "keywords": ["battleship", "game", "javascript", "html5", "css3"],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/battleship-game.git"
+  }
+}

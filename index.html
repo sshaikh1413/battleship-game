@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship - Player vs AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚓ BATTLESHIP ⚓</h1>
+        
+        <div class="status" id="status">Place your ships on the board. Click to rotate, then click on the board to place.</div>
+        
+        <div class="ship-placement" id="shipPlacement">
+            <div>Ships to place:</div>
+            <div class="ship-list" id="shipList">
+                <div class="ship-item placing" data-ship="carrier">Carrier (5)</div>
+                <div class="ship-item" data-ship="battleship">Battleship (4)</div>
+                <div class="ship-item" data-ship="cruiser">Cruiser (3)</div>
+                <div class="ship-item" data-ship="submarine">Submarine (3)</div>
+                <div class="ship-item" data-ship="destroyer">Destroyer (2)</div>
+            </div>
+            <div class="controls">
+                <button class="btn" id="rotateBtn">Rotate Ship</button>
+                <button class="btn" id="randomBtn">Random Placement</button>
+                <button class="btn" id="startBtn" disabled>Start Game</button>
+            </div>
+        </div>
+
+        <div class="game-boards">
+            <div class="board-section">
+                <div class="board-title">Your Fleet</div>
+                <div class="board" id="playerBoard"></div>
+            </div>
+            <div class="board-section">
+                <div class="board-title">Enemy Waters</div>
+                <div class="board" id="aiBoard"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" id="newGameBtn" style="display: none;">New Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
